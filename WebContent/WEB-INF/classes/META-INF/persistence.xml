@@ -1,0 +1,4 @@
+<persistence-unit name="PmfPU">
+    <jta-data-source>jdbc/pmf</jta-data-source>
+    <class>com.pmf.modele.Utilisateur</class>
+</persistence-unit>
