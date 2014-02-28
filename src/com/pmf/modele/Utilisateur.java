@@ -1,14 +1,19 @@
 package com.pmf.modele;
 
+import javax.annotation.Generated;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  * Un utilisateur de la place de marché
  */
 @Entity
-public abstract class Utilisateur {
+public class Utilisateur {
 	protected String adresseEMail;
 	protected String telephone;
+	@Id	
 	protected String identifiant;
 	protected String motDePasse;
 	
