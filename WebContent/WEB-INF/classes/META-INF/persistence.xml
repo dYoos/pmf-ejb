@@ -1,6 +1,8 @@
 <persistence-unit name="PmfPU">
-    <jta-data-source>jdbc/pmf</jta-data-source>
+    <jta-data-source>jdbc/pmfdb</jta-data-source>
     <class>com.pmf.modele.Utilisateur</class>
+    <class>com.pmf.modele.Organisme</class>
+    <!--  property name="eclipselink.ddl-generation" value="create-tables"/-->
     <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
     <property name="eclipselink.ddl-generation.output-mode" value="both"/>
     <property name="eclipselink.logging.level" value="FINE" />    

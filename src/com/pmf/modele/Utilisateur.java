@@ -13,6 +13,7 @@ import javax.persistence.Id;
 public class Utilisateur {
 	protected String adresseEMail;
 	protected String telephone;
+	private String nomDeSonChat;
 	@Id	
 	protected String identifiant;
 	protected String motDePasse;
